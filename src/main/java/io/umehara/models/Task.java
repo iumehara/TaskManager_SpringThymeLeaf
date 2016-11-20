@@ -11,10 +11,6 @@ public class Task {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -23,7 +19,6 @@ public class Task {
         Task task = (Task) o;
 
         return name != null ? name.equals(task.name) : task.name == null;
-
     }
 
     @Override
