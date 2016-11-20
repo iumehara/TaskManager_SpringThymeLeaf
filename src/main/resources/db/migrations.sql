@@ -1,0 +1,8 @@
+CREATE TABLE tasks (
+  id BIGSERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  time_needed INTEGER,
+  importance VARCHAR(100),
+  created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT current_timestamp NOT NULL,
+  updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT current_timestamp NOT NULL
+)

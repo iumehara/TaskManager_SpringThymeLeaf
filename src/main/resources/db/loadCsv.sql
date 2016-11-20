@@ -1,0 +1,1 @@
+\copy tasks(name, time_needed, importance) FROM '~/Documents/Tasks_for_TaskManager.csv' DELIMITER ',' CSV HEADER;
